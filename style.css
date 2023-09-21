@@ -1,0 +1,187 @@
+:root {
+  --primary: #333;
+  --secondary: #555;
+  --ternary: #666;
+  --light: #ccc;
+  --success: green;
+  --info: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: Consolas, Courier, monospace;
+}
+
+.button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.badge-success {
+  background-color: var(--success);
+}
+
+.badge-info {
+  background-color: var(--info);
+}
+
+.button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+header,
+section,
+footer {
+  padding: 5rem;
+  text-align: center;
+}
+
+nav,
+footer {
+  padding: 1rem;
+  background-color: var(--primary);
+  color: white;
+}
+
+header,
+#experience,
+#contact {
+  background-color: var(--secondary);
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+header div p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--light);
+}
+
+#about {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-size: 1.25rem;
+  color: var(--ternary);
+}
+
+#experience {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#experience h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#experience .experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#experience .experience-container .experience-card {
+  text-align: justify;
+  background-color: var(--light);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#experience .experience-container .experience-card .company-logo img {
+  max-width: 75px;
+}
+
+#experience .experience-container .experience-card .experience-info h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: black;
+}
+
+#experience .experience-container .experience-card .experience-info h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 0.1rem;
+  color: var(--primary);
+}
+
+#experience
+  .experience-container
+  .experience-card
+  .experience-info
+  p.experience-period {
+  color: var(--secondary);
+  margin-top: 0.75rem;
+  font-weight: bold;
+}
+
+#experience
+  .experience-container
+  .experience-card
+  .experience-info
+  p.experience-skills {
+  color: var(--secondary);
+  margin-top: 1rem;
+  font-weight: bold;
+}
