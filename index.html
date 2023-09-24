@@ -177,12 +177,14 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-carousel">
-        <button type="button" class="button">Prev</button>
-        <div class="project-container">
+        <button id="carousel-prev-button" type="button" class="button">
+          Prev
+        </button>
+        <div id="project-container" class="project-container">
           <div class="project-card">
             <div class="project-card-image">
               <img
-                src="./images/projects/daily-savings.png"
+                src="./images/projects/daily-savings-mobile.png"
                 alt="Daily Savings"
               />
             </div>
@@ -208,30 +210,34 @@
           <div class="project-card">
             <div class="project-card-image">
               <img
-                src="./images/projects/daily-savings.png"
-                alt="Daily Savings"
+                src="./images/projects/technical-docs-mobile.png"
+                alt="Technical Documentation"
               />
             </div>
             <div class="project-card-description">
-              <h3>Daily Savings</h3>
+              <h3>Technical Documentation</h3>
+              <span class="badge badge-success">Completed</span>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Placeat expedita qui earum veritatis ea, nemo ipsum doloribus
-                accusantium consequatur doloremque excepturi quae, temporibus
-                dicta perferendis? Reiciendis unde praesentium harum placeat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                hic in optio, repellendus suscipit ducimus.
               </p>
               <p>Tech Stack:</p>
               <div class="tags">
-                <span class="badge badge-white">TypeScript</span>
-                <span class="badge badge-white">Express JS</span>
-                <span class="badge badge-white">PostgreSQL</span>
-                <span class="badge badge-white">React</span>
+                <span class="badge badge-white">HTML</span>
+                <span class="badge badge-white">CSS</span>
               </div>
+              <button type="button" class="button button-sm">Details</button>
             </div>
           </div>
         </div>
-        <button type="button" class="button">Next</button>
+        <button id="carousel-next-button" type="button" class="button">
+          Next
+        </button>
       </div>
+      <p>
+        <span id="carousel-current-card">{currentOpenedCard}</span> of
+        <span id="carousel-total-cards">{totalProjectCards}</span>
+      </p>
     </section>
 
     <!-- Contact section -->
@@ -241,5 +247,8 @@
 
     <!-- Footer -->
     <footer>&copy; 2023 <strong>Fadhil</strong>. All right reserved.</footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
   </body>
 </html>

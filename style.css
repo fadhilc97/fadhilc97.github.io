@@ -31,6 +31,21 @@
   color: black;
 }
 
+.button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  border-color: var(--light);
+  color: var(--light);
+}
+
+.button:disabled:hover {
+  background-color: transparent;
+}
+
 .button-sm {
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
@@ -69,11 +84,6 @@
   color: black;
 }
 
-.button:hover {
-  background-color: var(--primary);
-  color: white;
-}
-
 header,
 section,
 footer {
@@ -101,6 +111,7 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 nav ul li {
@@ -220,6 +231,11 @@ header div p {
   font-size: 2rem;
 }
 
+#projects p {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
 #projects .project-carousel {
   display: flex;
   gap: 2rem;
@@ -228,9 +244,10 @@ header div p {
 }
 
 #projects .project-carousel .project-container {
-  background-color: aqua;
+  background-color: var(--primary);
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
 #projects .project-carousel .project-container .project-card {
@@ -242,6 +259,7 @@ header div p {
   color: white;
   gap: 2rem;
   flex-shrink: 0;
+  transition: 0.75s;
 }
 
 #projects .project-carousel .project-container .project-card img {
