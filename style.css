@@ -26,9 +26,32 @@ a {
   text-decoration: none;
 }
 
-/* STYLE: Header */
+/* STYLE: Components */
+.btn-outlined {
+  font-weight: 500;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary);
+  transition: 0.4s;
+}
 
-header {
+.btn-outlined:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary {
+  color: white;
+  font-weight: 500;
+  background-color: var(--primary);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+/* STYLE: Navigation */
+
+nav {
+  background-color: var(--primary);
   position: fixed;
   padding: 1rem 15%;
   display: flex;
@@ -37,32 +60,26 @@ header {
   width: 100%;
 }
 
-header ul {
+nav a h2 {
+  color: white;
+}
+
+nav ul {
   display: flex;
   list-style: none;
   gap: 1rem;
   font-weight: 600;
 }
 
-header ul li a {
+nav ul li a {
   padding: 0.5rem;
   border-radius: 0.5rem;
-  transition: 0.4s;
-}
-
-header ul li a:hover {
-  background-color: var(--primary);
   color: white;
-}
-
-header ul li a {
-  color: rgba(15, 23, 42, 0.9);
 }
 
 /* STYLE: Hero Section */
 
 .hero {
-  background-color: #eee;
   height: 100vh;
   padding: 0 15%;
   display: flex;
@@ -96,15 +113,6 @@ header ul li a {
 
 .hero article .hero-cta {
   margin-top: 2rem;
-}
-
-.hero article .hero-cta .hero-cta-primary {
-  color: white;
-  font-weight: 500;
-  background-color: var(--primary);
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  transition: 0.4s;
 }
 
 .hero .profile-picture-wrapper {
