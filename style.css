@@ -301,7 +301,8 @@ nav ul li a {
 @media (max-width: 768px) {
   header,
   .hero,
-  .about {
+  .about,
+  .experience {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -338,6 +339,10 @@ nav ul li a {
     text-align: center;
   }
 
+  .about {
+    padding-top: 10rem;
+  }
+
   .about .about-additionals {
     flex-direction: column;
   }
@@ -347,7 +352,8 @@ nav ul li a {
   }
 
   .experience {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    padding-top: 8rem;
   }
 
   .experience-wrapper {
