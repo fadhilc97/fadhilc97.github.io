@@ -318,6 +318,10 @@ nav ul li a {
   .about .about-additionals .about-location iframe {
     height: 280px;
   }
+
+  .experience-wrapper {
+    flex-direction: column;
+  }
 }
 
 /* RESPONSIVE: Mobile */
