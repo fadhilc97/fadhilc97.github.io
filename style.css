@@ -155,7 +155,7 @@ nav ul li a {
 }
 
 .about article .about-description {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 0 1rem;
   border-left: 8px solid var(--primary);
 }
