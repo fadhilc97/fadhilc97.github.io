@@ -2,9 +2,7 @@
 
 :root {
   --primary: #0079ff;
-  --secondary: #00dfa2;
-  --tertiary: #f6fa70;
-  --quatenary: #ff0060;
+  --secondary: #3394ff;
   --font-primary: "Open Sans", sans-serif;
   --font-secondary: "Lato", sans-serif;
   --font-monospace: "Cascadia Mono", Consolas, "Courier New", monospace;
@@ -50,6 +48,11 @@ a {
   background-color: var(--primary);
   padding: 0.75rem;
   border-radius: 0.5rem;
+  transition: 0.4s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
 }
 
 /* STYLE: Navigation */
@@ -84,20 +87,23 @@ nav ul li a {
 /* STYLE: Generic Section Styles */
 
 .hero,
-.about {
+.about,
+.experience {
   height: 100vh;
   padding: 0 15%;
 }
 
 .hero article h1,
-.about article h1 {
+.about article h1,
+.experience article h1 {
   margin-top: 0.1rem;
   font-size: 3rem;
   line-height: 3rem;
 }
 
 .hero article h1 span,
-.about article h1 span {
+.about article h1 span,
+.experience article h1 span {
   color: var(--primary);
 }
 
@@ -217,6 +223,51 @@ nav ul li a {
   border: 0;
   margin-top: 1rem;
   border-radius: 1rem;
+}
+
+/* STYLE: Experience */
+.experience {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience-wrapper ul {
+  flex-basis: calc(100% / 3);
+  list-style-type: none;
+}
+
+.experience-wrapper ul li {
+  padding: 0.5rem 0 0.5rem 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+  min-height: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.experience-unselected {
+  border-left: 3px solid #ddd;
+}
+
+.experience-selected {
+  border-left: 3px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.experience-wrapper ul li:hover {
+  border-left: 3px solid var(--primary);
+}
+
+.experience-detail {
+  width: 100%;
 }
 
 /* RESPONSIVE: Tablet */
