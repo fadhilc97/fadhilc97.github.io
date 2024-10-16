@@ -197,9 +197,6 @@ nav ul li a {
 }
 
 .about .about-additionals .about-tech-stacks .about-tech-stacks-content {
-  border-radius: 1rem;
-  padding: 1rem;
-  border: 1px solid var(--primary);
   margin-top: 1rem;
 }
 
