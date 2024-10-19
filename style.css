@@ -94,7 +94,8 @@ nav ul li a {
 
 .hero,
 .about,
-.experience {
+.experience,
+.contact {
   height: 100vh;
   padding: 0 15%;
 }
@@ -106,7 +107,8 @@ nav ul li a {
 .hero article h1,
 .about article h1,
 .experience article h1,
-.projects article h1 {
+.projects article h1,
+.contact article h1 {
   margin-top: 0.1rem;
   font-size: 3rem;
   line-height: 3rem;
@@ -115,7 +117,8 @@ nav ul li a {
 .hero article h1 span,
 .about article h1 span,
 .experience article h1 span,
-.projects article h1 span {
+.projects article h1 span,
+.contact article h1 span {
   color: var(--primary);
 }
 
@@ -365,9 +368,42 @@ nav ul li a {
   display: block;
 }
 
+/* STYLE: Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.contact-item a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: transform 0.4s;
+  display: block;
+}
+
+.contact-item a:hover {
+  transform: scale(1.025);
+}
+
+.contact-item a span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
 /* RESPONSIVE: Small Screen */
 @media (max-width: 1024px) {
-  .projects-wrapper {
+  .projects-wrapper,
+  .contact-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -378,7 +414,8 @@ nav ul li a {
   .hero,
   .about,
   .experience,
-  .projects {
+  .projects,
+  .contact {
     padding-left: 10%;
     padding-right: 10%;
   }
