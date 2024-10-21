@@ -391,6 +391,7 @@ nav .hamburger-menu {
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 
 .contact-wrapper {
@@ -457,6 +458,11 @@ footer p .fa-heart {
     padding-right: 10%;
   }
 
+  .experience {
+    height: auto;
+    margin-top: 2rem;
+  }
+
   nav {
     display: inline;
     opacity: 1;
@@ -518,7 +524,7 @@ footer p .fa-heart {
   }
 
   .about {
-    padding-top: 10rem;
+    height: auto;
   }
 
   .about .about-additionals {
@@ -529,13 +535,12 @@ footer p .fa-heart {
     height: 280px;
   }
 
-  .experience {
-    margin-top: 2rem;
-    padding-top: 8rem;
-  }
-
   .experience-wrapper {
     flex-direction: column;
+  }
+
+  .contact {
+    height: auto;
   }
 }
 
