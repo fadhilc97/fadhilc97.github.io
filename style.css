@@ -68,8 +68,17 @@ nav {
   opacity: 0.9;
 }
 
-nav a h2 span {
+nav .nav-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-title a h2 span {
   color: var(--primary);
+}
+
+nav .nav-title .hamburger-menu {
+  display: none;
 }
 
 nav ul {
@@ -82,6 +91,13 @@ nav ul {
 nav ul li a {
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+nav .hamburger-menu {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .card {
@@ -441,8 +457,37 @@ footer p .fa-heart {
     padding-right: 10%;
   }
 
+  nav {
+    display: inline;
+    opacity: 1;
+  }
+
   nav ul {
-    gap: 0.75rem;
+    gap: 0;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  nav ul li a:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  nav .nav-title .hamburger-menu {
+    display: block;
+  }
+
+  .nav-menus {
+    display: block;
   }
 
   .hero {
