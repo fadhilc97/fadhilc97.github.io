@@ -369,6 +369,7 @@ nav .hamburger-menu {
 .projects-tech-stack {
   margin-top: 0.5rem;
   align-self: self-start;
+  margin-bottom: 1rem;
 }
 
 .projects-tech-stack-label {
