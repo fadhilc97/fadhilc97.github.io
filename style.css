@@ -512,9 +512,8 @@ footer p .fa-heart {
     width: 200px;
   }
 
-  .hero article .hero-cta .hero-cta-primary {
-    display: inline-block;
-    width: 100%;
+  .hero article .hero-cta a {
+    display: block;
     text-align: center;
   }
 
