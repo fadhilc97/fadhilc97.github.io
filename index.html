@@ -3,281 +3,280 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fadhil - Portfolio</title>
+    <title>Software Developer | Problem Solver</title>
+    <link rel="stylesheet" href="./all.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Navigation menu -->
-    <nav>
-      <h1>Fadhil</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Hero header -->
+    <!-- START Header -->
     <header>
-      <div>
-        <h1>Hi, I am Fadhil</h1>
-        <p>IT Enthusiast | Problem Solver | Web Programmer</p>
-      </div>
+      <nav>
+        <div class="nav-title">
+          <a href="#"
+            ><h2>Fa<span>dhil</span></h2></a
+          >
+          <button type="button" class="hamburger-menu">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </button>
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <!-- END Header -->
 
-    <!-- About section -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        5+ years of experience to explore career about programming and
-        technology since involved in internship program that held by campus
-        until my professional journey at this point.
-      </p>
-      <p>
-        Working as Software Engineer in Software House Company is my first
-        professional job in my journey to develop and customize the ERP Software
-        features based on the client requirements.
-      </p>
-      <p>
-        Currently, I'm hybrid working as professional Frontend Web Application
-        Developer for Singapore organization to develop their platforms that
-        support the Industry 4.0 Transformation.
-      </p>
-      <p>
-        Flexible to learn new stuff related to technology trends. Web
-        development is my focus plan to improve my programming experiences. Does
-        not rule out the possibility to learn other things related to
-        technology, such as machine learning (part of AI), data science and
-        analytics, Internet of Things (IoT), etc.
-      </p>
-      <a class="button" href="./assets/cv.pdf" target="_blank">Download CV</a>
-    </section>
+    <main>
+      <!-- START Hero section -->
+      <section id="hero" class="hero">
+        <article>
+          <p class="hero-intro">Hey, I am Fadhil</p>
+          <h1>Web Application <span>Developer</span></h1>
+          <p class="hero-headline">
+            I'm a problem solver and tech enthusiast based in Indonesia.
+            Passionate to help your business problem with digital solution
+          </p>
+          <div class="hero-cta">
+            <a target="_blank" class="btn-primary" href="./assets/cv.pdf"
+              >Downlaod CV</a
+            >
+          </div>
+        </article>
+        <div class="profile-picture-wrapper">
+          <img src="./assets/profile.jpg" alt="Profile Picture" />
+        </div>
+      </section>
+      <!-- END Hero section -->
 
-    <!-- Experience section -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="experience-container">
-        <div class="experience-card">
-          <div class="company-logo">
-            <img src="./assets/images/companies/incit.jpg" alt="INCIT" />
-          </div>
-          <div class="experience-info">
-            <h3>Frontend Developer</h3>
-            <h4>International Centre for Industrial Transformation (INCIT)</h4>
-            <p class="experience-period">
-              November 2022 (Full-time)
-              <span class="badge badge-success">Active</span>
+      <!-- START About section -->
+      <section id="about" class="about">
+        <article>
+          <h1><span>About</span> me</h1>
+          <div class="about-description">
+            <p>
+              Experienced for 4+ years in web based application development to
+              solve the business problems.
+              <span>Effective, efficient and productive</span> is the keys what
+              they want to achieve and satisfy.
             </p>
-            <p class="experience-skills">
-              Skills: <span class="badge">React</span>
-              <span class="badge">TypeScript</span>
-              <span class="badge">Tailwind CSS</span>
-              <span class="badge">Azure Git Repos</span>
+            <p>
+              Currently working as <span>Frontend Developer</span> at INCIT for
+              2 years experience using React + TypeScript.
             </p>
           </div>
-        </div>
-        <div class="experience-card">
-          <div class="company-logo">
-            <img
-              src="./assets/images/companies/baraya-edukasi.png"
-              alt="Baraya Edukasi"
-            />
-          </div>
-          <div class="experience-info">
-            <h3>Mathematics Tutor</h3>
-            <h4>Baraya Edukasi</h4>
-            <p class="experience-period">
-              October 2022 (Freelance)
-              <span class="badge badge-success">Active</span>
-            </p>
-            <p class="experience-skills">
-              Skills: <span class="badge">Basic Maths</span>
-              <span class="badge">Teaching</span>
-            </p>
-          </div>
-        </div>
-        <div class="experience-card">
-          <div class="company-logo">
-            <img src="./assets/images/companies/tigernix.jpg" alt="Tigernix" />
-          </div>
-          <div class="experience-info">
-            <h3>Software Engineer</h3>
-            <h4>PT. Tigernix Solutions Indonesia</h4>
-            <p class="experience-period">
-              March 2020 - August 2022 (Full-time)
-            </p>
-            <p class="experience-skills">
-              Skills: <span class="badge">Odoo</span>
-              <span class="badge">Python</span>
-              <span class="badge">XML</span>
-              <span class="badge">Subversion</span>
-            </p>
-          </div>
-        </div>
-        <div class="experience-card">
-          <div class="company-logo">
-            <img
-              src="./assets/images/companies/sekolah-mhs.jpg"
-              alt="SMK Multistudi High School"
-            />
-          </div>
-          <div class="experience-info">
-            <h3>Substitute Teacher</h3>
-            <h4>SMK Multistudi High School Batam</h4>
-            <p class="experience-period">
-              August 2019 - December 2019 (Part-time)
-            </p>
-            <p class="experience-skills">
-              Skills: <span class="badge">Laravel</span>
-              <span class="badge">PHP</span>
-              <span class="badge">Bootstrap</span>
-            </p>
-          </div>
-        </div>
-        <div class="experience-card">
-          <div class="company-logo">
-            <img
-              src="./assets/images/companies/sekolah-kallista.jpg"
-              alt="Sekolah Kallista"
-            />
-          </div>
-          <div class="experience-info">
-            <h3>Information Technology Teacher</h3>
-            <h4>Sekolah Kallista</h4>
-            <p class="experience-period">
-              July 2019 - December 2019 (Part-time)
-            </p>
-            <p class="experience-skills">
-              Skills: <span class="badge">Teaching</span>
-              <span class="badge">Code.org</span>
-            </p>
-          </div>
-        </div>
-        <div class="experience-card">
-          <div class="company-logo">
-            <img
-              src="./assets/images/companies/ruang-kreasi.png"
-              alt="Ruang Kreasi"
-            />
-          </div>
-          <div class="experience-info">
-            <h3>Information Technology Staff</h3>
-            <h4>PT. Multi Kreasi Sinergia</h4>
-            <p class="experience-period">July 2018 - March 2019 (Internship)</p>
-            <p class="experience-skills">
-              Skills: <span class="badge">Git</span>
-              <span class="badge">Gitlab</span>
-              <span class="badge">Arduino</span>
-              <span class="badge">IoT</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Projects section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-carousel">
-        <button id="carousel-prev-button" type="button" class="button">
-          Prev
-        </button>
-        <div id="project-container" class="project-container">
-          <div class="project-card">
-            <div class="project-card-image">
-              <img
-                src="./assets/images/projects/daily-savings-mobile.png"
-                alt="Daily Savings"
-              />
+        </article>
+        <div class="about-additionals">
+          <div class="about-tech-stacks">
+            <h3>Tech stacks</h3>
+            <div class="about-tech-stacks-content card">
+              <ul>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Prisma.js</li>
+              </ul>
             </div>
-            <div class="project-card-description">
-              <h3>Daily Savings</h3>
-              <span class="badge badge-warning">Ongoing</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Placeat expedita qui earum veritatis ea, nemo ipsum doloribus
-                accusantium consequatur doloremque excepturi quae, temporibus
-                dicta perferendis? Reiciendis unde praesentium harum placeat!
+          </div>
+          <div class="about-location">
+            <h3>Location</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510642.1439475976!2d103.7234514410101!3d0.8378388166899174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d9bce8c054ce05%3A0x3039d80b220cbb0!2sBatam%2C%20Batam%20City%2C%20Riau%20Islands!5e0!3m2!1sen!2sid!4v1728807862559!5m2!1sen!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- END About section -->
+
+      <!-- START Experience section -->
+      <section id="experience" class="experience">
+        <article>
+          <h1>My <span>Experience</span></h1>
+        </article>
+        <div class="experience-wrapper">
+          <ul>
+            <li class="experience-list-item" data-experienceid="incit">
+              International Centre for Industrial Transformation
+            </li>
+            <li class="experience-list-item" data-experienceid="tigernix">
+              PT. Tigernix Solutions Indonesia
+            </li>
+            <li class="experience-list-item" data-experienceid="smk-mhs">
+              SMK Multistudi High School
+            </li>
+            <li class="experience-list-item" data-experienceid="pt-mks">
+              PT. Multi Kreasi Sinergia
+            </li>
+          </ul>
+          <div class="experience-detail">
+            <h2>Frontend Developer <span>@ INCIT</span></h2>
+            <p>November 2022 - Present</p>
+            <ul>
+              <li>
+                Implement the UI components and pages based on designed by UI/UX
+                Designers
+              </li>
+              <li>
+                Integrate REST API that already created with Backend Developer
+              </li>
+              <li>
+                Collaborate with across functional teams: UI/UX Designers,
+                Backend/Fullstack Developers, QAs, and Technical Writers
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END Experience section -->
+
+      <!-- START Projects section -->
+      <section id="projects" class="projects">
+        <article>
+          <h1>My <span>Projects</span></h1>
+        </article>
+        <div class="projects-wrapper">
+          <div class="projects-item card">
+            <img
+              src="./assets/images/projects/daily-savings.png"
+              alt="Daily Savings"
+              class="projects-image"
+            />
+            <div class="projects-description">
+              <h2>Daily Savings</h2>
+              <p>Recording and summarize my savings in daily basis.</p>
+            </div>
+            <div class="projects-tech-stack">
+              <p class="projects-tech-stack-label">
+                Tech Stacks:
+                <span
+                  >TypeScript, Next.js, Tailwind CSS, PostgreSQL, Prisma.js,
+                  Recharts</span
+                >
               </p>
-              <p>Tech Stack:</p>
-              <div class="tags">
-                <span class="badge badge-white">TypeScript</span>
-                <span class="badge badge-white">Express JS</span>
-                <span class="badge badge-white">PostgreSQL</span>
-                <span class="badge badge-white">React</span>
-              </div>
-              <button type="button" class="button button-sm">Details</button>
             </div>
+            <a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7226029158135386112/"
+              target="_blank"
+              class="btn-primary"
+              >Link Demo</a
+            >
           </div>
-          <div class="project-card">
-            <div class="project-card-image">
-              <img
-                src="./assets/images/projects/technical-docs-mobile.png"
-                alt="Technical Documentation"
-              />
-            </div>
-            <div class="project-card-description">
-              <h3>Technical Documentation</h3>
-              <span class="badge badge-success">Completed</span>
+          <div class="projects-item card">
+            <img
+              src="./assets/images/projects/technical-docs.png"
+              alt="Technical Documentation"
+              class="projects-image"
+            />
+            <div class="projects-description">
+              <h2>Technical Documentation</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                hic in optio, repellendus suscipit ducimus.
+                Simple technical documentation about JavaScript Fundamentals.
               </p>
-              <p>Tech Stack:</p>
-              <div class="tags">
-                <span class="badge badge-white">HTML</span>
-                <span class="badge badge-white">CSS</span>
-              </div>
-              <button type="button" class="button button-sm">Details</button>
             </div>
+            <div class="projects-tech-stack">
+              <p class="projects-tech-stack-label">
+                Tech Stacks:
+                <span>HTML, CSS</span>
+              </p>
+            </div>
+            <a
+              href="https://fadhilc97.github.io/fcc-technical-documentation/"
+              target="_blank"
+              class="btn-primary"
+              >Link Demo</a
+            >
+          </div>
+          <div class="projects-item card">
+            <img
+              src="./assets/images/projects/valorant-info.png"
+              alt=""
+              class="projects-image"
+            />
+            <div class="projects-description">
+              <h2>Valorant Info - Asia Pacific 2022</h2>
+              <p>
+                Introduction about game Valorant in general and tournament
+                information in Asia Pacific 2022. This site is written in Bahasa
+                Indonesia.
+              </p>
+            </div>
+            <div class="projects-tech-stack">
+              <p class="projects-tech-stack-label">
+                Tech Stacks:
+                <span>HTML, CSS, JavaScript</span>
+              </p>
+            </div>
+            <a
+              href="https://fadhilc97.github.io/valorant-info/"
+              target="_blank"
+              class="btn-primary projects-link-demo"
+              >Link Demo</a
+            >
           </div>
         </div>
-        <button id="carousel-next-button" type="button" class="button">
-          Next
-        </button>
-      </div>
+      </section>
+      <!-- END Projects section -->
+
+      <!-- START Contact section -->
+      <section id="contact" class="contact">
+        <article>
+          <h1><span>Contact</span> me</h1>
+        </article>
+        <ul class="contact-wrapper">
+          <li class="contact-item">
+            <a href="mailto:fadhilc97@gmail.com" target="_blank" class="card"
+              ><i class="fa-regular fa-envelope"></i><span>Email</span></a
+            >
+          </li>
+          <li class="contact-item">
+            <a
+              href="https://www.linkedin.com/in/fadhil-lan/"
+              target="_blank"
+              class="card"
+              ><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a
+            >
+          </li>
+          <li class="contact-item">
+            <a href="https://github.com/fadhilc97/" target="_blank" class="card"
+              ><i class="fa-brands fa-github"></i><span>GitHub</span></a
+            >
+          </li>
+          <li class="contact-item">
+            <a
+              href="https://www.instagram.com/dhil.lan12/"
+              target="_blank"
+              class="card"
+              ><i class="fa-brands fa-instagram" style="color: #ffd43b"></i
+              ><span>Instagram</span></a
+            >
+          </li>
+        </ul>
+      </section>
+      <!-- END Contact section -->
+    </main>
+
+    <!-- START Footer -->
+    <footer>
       <p>
-        <span id="carousel-current-card">{currentOpenedCard}</span> of
-        <span id="carousel-total-cards">{totalProjectCards}</span>
+        Created with ❤️ by
+        <a href="https://www.instagram.com/dhil.lan12/" target="_blank"
+          >Fadhil</a
+        >
       </p>
-    </section>
+    </footer>
+    <!-- END Footer -->
 
-    <!-- Contact section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-buttons">
-        <a
-          href="mailto:fadhilc97@gmail.com"
-          target="_blank"
-          class="button button-primary"
-          >Email</a
-        >
-        <a
-          href="https://www.github.com/fadhilc97"
-          target="_blank"
-          class="button button-primary"
-          >Github</a
-        >
-        <a
-          href="https://www.instagram.com/fadhilc97"
-          target="_blank"
-          class="button button-primary"
-          >Instagram</a
-        >
-        <a
-          href="https://www.linkedin.com/in/fadhil-lan/"
-          target="_blank"
-          class="button button-primary"
-          >LinkedIn</a
-        >
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>&copy; 2023 <strong>Fadhil</strong>. All right reserved.</footer>
-
-    <!-- Scripts -->
+    <script src="./all.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
