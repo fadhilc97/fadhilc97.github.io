@@ -120,21 +120,13 @@ nav ul li a {
   padding: 5rem 15%;
 }
 
-.hero article h1,
-.about article h1,
-.experience article h1,
-.projects article h1,
-.contact article h1 {
+.section-title {
   margin-top: 0.1rem;
   font-size: 3rem;
   line-height: 3rem;
 }
 
-.hero article h1 span,
-.about article h1 span,
-.experience article h1 span,
-.projects article h1 span,
-.contact article h1 span {
+.section-title span {
   color: var(--primary);
 }
 
@@ -453,6 +445,11 @@ footer p .fa-heart {
 
 /* RESPONSIVE: Tablet */
 @media (max-width: 768px) {
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
   nav,
   .hero,
   .about,
@@ -555,7 +552,16 @@ footer p .fa-heart {
     display: none;
   }
 
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
   .hero article {
     flex-basis: 80%;
+  }
+
+  .projects-image {
+    max-height: 140px;
   }
 }
