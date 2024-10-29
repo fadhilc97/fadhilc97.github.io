@@ -62,8 +62,13 @@ const menuUl = document.querySelector("nav ul");
 const experienceLi = document.querySelectorAll(".experience-list-item");
 const experienceDetailWrapper = document.querySelector(".experience-detail");
 
-hamburgerBtn.addEventListener("click", () => {
+hamburgerBtn.addEventListener("click", (event) => {
+  event.stopPropagation();
   showNavMenus();
+});
+
+document.addEventListener("click", () => {
+  menuUl.classList.remove("nav-menus");
 });
 
 let prevSelectedExperienceLi = experienceLi[0];
