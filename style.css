@@ -523,6 +523,7 @@ footer p .fa-heart {
 
   nav ul {
     gap: 0;
+    padding: 0.5rem 0;
     flex-direction: column;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
