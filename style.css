@@ -88,9 +88,60 @@ nav ul {
   font-weight: 600;
 }
 
-nav ul li a {
+/* 
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+*/
+
+.nav-link {
+  position: relative;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #777;
+}
+
+.nav-link,
+.nav-link::before,
+.nav-link::after {
+  transition: 0.5s;
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: "";
+  color: transparent;
+  background: var(--primary);
+  height: 1px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .hamburger-menu {
@@ -478,16 +529,11 @@ footer p .fa-heart {
     display: none;
   }
 
-  nav ul li a {
+  .nav-link {
     padding: 0.5rem 1rem;
     display: block;
     width: 100%;
     transition: 0.4s;
-  }
-
-  nav ul li a:hover {
-    background-color: var(--primary);
-    color: white;
   }
 
   .hamburger-menu {
