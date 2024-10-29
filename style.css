@@ -349,10 +349,11 @@ nav.stroke ul li a:hover:after {
 }
 
 .experience-detail ul {
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 1rem 1.5rem 0;
   list-style-type: "\2713";
-  height: 300px;
+  min-height: 175px;
+  max-height: 300px;
   overflow: auto;
   border-top: 1px solid #777;
 }
