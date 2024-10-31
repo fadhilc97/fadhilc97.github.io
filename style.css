@@ -28,6 +28,12 @@ a {
   text-decoration: none;
 }
 
+.icon {
+  margin-right: 0.5rem;
+  width: 0.8rem;
+  transform: translateY(10%);
+}
+
 /* STYLE: Components */
 .btn-outlined {
   font-weight: 500;
