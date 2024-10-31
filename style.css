@@ -476,6 +476,11 @@ nav.stroke ul li a:hover:after {
   margin-left: 1rem;
 }
 
+.contact-item a span span {
+  font-size: 1rem;
+  color: #999;
+}
+
 footer {
   padding: 1.5rem;
   background-color: var(--primary);
