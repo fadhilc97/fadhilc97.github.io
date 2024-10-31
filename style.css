@@ -453,6 +453,16 @@ nav.stroke ul li a:hover:after {
   padding-bottom: 4rem;
 }
 
+.contact-description {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.contact-description span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .contact-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
