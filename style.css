@@ -552,18 +552,23 @@ footer p .fa-heart {
   }
 
   nav ul {
+    position: absolute;
+    width: 80%;
     gap: 0;
+    left: 10%;
+    top: 3.5rem;
     padding: 0.5rem 0;
     flex-direction: column;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
   }
 
   .nav-link {
     padding: 0.5rem 1rem;
     display: block;
-    width: 100%;
     transition: 0.4s;
   }
 
@@ -571,8 +576,10 @@ footer p .fa-heart {
     display: block;
   }
 
-  .nav-menus {
-    display: block;
+  .show-nav-menus {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
   }
 
   .hero {

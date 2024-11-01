@@ -88,7 +88,7 @@ experienceLi.forEach((el) => {
 });
 
 function showNavMenus() {
-  menuUl.classList.toggle("nav-menus");
+  menuUl.classList.toggle("show-nav-menus");
 }
 
 function showExperienceDetails(el) {
