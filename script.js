@@ -72,7 +72,7 @@ hamburgerBtn.addEventListener("click", (event) => {
 });
 
 document.addEventListener("click", () => {
-  menuUl.classList.remove("nav-menus");
+  menuUl.classList.remove("show-nav-menus");
 });
 
 let prevSelectedExperienceLi = experienceLi[0];
