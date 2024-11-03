@@ -19,7 +19,7 @@ const EXPERIENCES = [
     position: "Software Engineer",
     companyShortName: "Tigernix",
     period: {
-      start: "March 202",
+      start: "March 2020",
       end: "August 2022",
     },
     descriptions: [

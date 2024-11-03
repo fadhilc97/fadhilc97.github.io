@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --primary: #0079ff;
   --secondary: #3394ff;
   --font-primary: "Open Sans", sans-serif;
-  --font-secondary: "Lato", sans-serif;
   --font-monospace: "Cascadia Mono", Consolas, "Courier New", monospace;
 }
 
@@ -179,8 +178,9 @@ nav.stroke ul li a:hover:after {
 
 .section-title {
   margin-top: 0.1rem;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #444;
 }
 
 .section-title span {
@@ -237,7 +237,7 @@ nav.stroke ul li a:hover:after {
 .about-description {
   margin-top: 2rem;
   padding: 0 1rem;
-  border-left: 8px solid var(--primary);
+  border-left: 4px solid var(--primary);
 }
 
 .about-description p {
@@ -632,12 +632,8 @@ footer p .fa-heart {
 
 /* RESPONSIVE: Mobile */
 @media (max-width: 480px) {
-  header ul {
-    display: none;
-  }
-
   .section-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -647,5 +643,9 @@ footer p .fa-heart {
 
   .projects-image {
     max-height: 140px;
+  }
+
+  .contact-item a span span {
+    display: none;
   }
 }
