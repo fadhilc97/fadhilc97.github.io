@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --primary: #0079ff;
   --secondary: #3394ff;
   --font-primary: "Open Sans", sans-serif;
-  --font-secondary: "Lato", sans-serif;
   --font-monospace: "Cascadia Mono", Consolas, "Courier New", monospace;
 }
 
@@ -26,6 +25,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  width: 0.8rem;
+  transform: translateY(10%);
 }
 
 /* STYLE: Components */
@@ -88,9 +93,60 @@ nav ul {
   font-weight: 600;
 }
 
-nav ul li a {
+/* 
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+*/
+
+.nav-link {
+  position: relative;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  font-weight: 700;
+  color: #777;
+}
+
+.nav-link,
+.nav-link::before,
+.nav-link::after {
+  transition: 0.5s;
+}
+
+.nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: "";
+  color: transparent;
+  background: var(--primary);
+  height: 1px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .hamburger-menu {
@@ -122,8 +178,9 @@ nav ul li a {
 
 .section-title {
   margin-top: 0.1rem;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #444;
 }
 
 .section-title span {
@@ -180,7 +237,7 @@ nav ul li a {
 .about-description {
   margin-top: 2rem;
   padding: 0 1rem;
-  border-left: 8px solid var(--primary);
+  border-left: 4px solid var(--primary);
 }
 
 .about-description p {
@@ -298,10 +355,11 @@ nav ul li a {
 }
 
 .experience-detail ul {
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 1rem 1.5rem 0;
   list-style-type: "\2713";
-  height: 300px;
+  min-height: 175px;
+  max-height: 300px;
   overflow: auto;
   border-top: 1px solid #777;
 }
@@ -340,11 +398,19 @@ nav ul li a {
   align-items: center;
 }
 
+.project-image-wrapper {
+  width: 100%;
+  max-height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
 .projects-image {
   /* max-width: 120px; */
-  max-height: 240px;
-  margin: 0 auto;
-  border-radius: 0.5rem;
+  height: 240px;
 }
 
 .projects-description {
@@ -387,6 +453,16 @@ nav ul li a {
   padding-bottom: 4rem;
 }
 
+.contact-description {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.contact-description span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .contact-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -408,6 +484,11 @@ nav ul li a {
 .contact-item a span {
   display: inline-block;
   margin-left: 1rem;
+}
+
+.contact-item a span span {
+  font-size: 1rem;
+  color: #999;
 }
 
 footer {
@@ -471,31 +552,34 @@ footer p .fa-heart {
   }
 
   nav ul {
+    position: absolute;
+    width: 80%;
     gap: 0;
+    left: 10%;
+    top: 3.5rem;
+    padding: 0.5rem 0;
     flex-direction: column;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
   }
 
-  nav ul li a {
+  .nav-link {
     padding: 0.5rem 1rem;
     display: block;
-    width: 100%;
     transition: 0.4s;
-  }
-
-  nav ul li a:hover {
-    background-color: var(--primary);
-    color: white;
   }
 
   .hamburger-menu {
     display: block;
   }
 
-  .nav-menus {
-    display: block;
+  .show-nav-menus {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
   }
 
   .hero {
@@ -548,12 +632,8 @@ footer p .fa-heart {
 
 /* RESPONSIVE: Mobile */
 @media (max-width: 480px) {
-  header ul {
-    display: none;
-  }
-
   .section-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -563,5 +643,9 @@ footer p .fa-heart {
 
   .projects-image {
     max-height: 140px;
+  }
+
+  .contact-item a span span {
+    display: none;
   }
 }

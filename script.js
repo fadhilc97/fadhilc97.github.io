@@ -8,17 +8,18 @@ const EXPERIENCES = [
       end: "Present",
     },
     descriptions: [
-      "Implement the UI components and pages based on designed by UI/UX ",
+      "Implement the UI components and pages based on designed by UI/UX Designers",
       "Integrate REST API that already created with Backend Developer",
       "Collaborate with across functional teams: UI/UX Designers, Backend/Fullstack Developers, QAs, and Technical Writers",
     ],
+    skills: ["React, TypeScript", "Tailwind CSS"],
   },
   {
     id: "tigernix",
     position: "Software Engineer",
     companyShortName: "Tigernix",
     period: {
-      start: "March 202",
+      start: "March 2020",
       end: "August 2022",
     },
     descriptions: [
@@ -27,6 +28,7 @@ const EXPERIENCES = [
       "Deployment setup using AWS EC2",
       "Create auto-backup database and attachment in server production with cron job and shell script",
     ],
+    skills: ["Odoo", "Python", "PostgreSQL"],
   },
   {
     id: "smk-mhs",
@@ -40,6 +42,7 @@ const EXPERIENCES = [
       "Provide materials, examination questions and evaluation for Web and Mobile subjec",
       'As a participant companion to participate the "LKS 2019" (student skill competition) Web and Technology competition Riau Island Province level for school representative',
     ],
+    skills: ["Laravel", "PHP", "Teaching"],
   },
   {
     id: "pt-mks",
@@ -54,6 +57,7 @@ const EXPERIENCES = [
       "Instructor of coding for kids",
       "Explore and prototyping related to robotic and IoT",
     ],
+    skills: ["Arduino", "Code.org", "Tutoring"],
   },
 ];
 
@@ -62,8 +66,13 @@ const menuUl = document.querySelector("nav ul");
 const experienceLi = document.querySelectorAll(".experience-list-item");
 const experienceDetailWrapper = document.querySelector(".experience-detail");
 
-hamburgerBtn.addEventListener("click", () => {
+hamburgerBtn.addEventListener("click", (event) => {
+  event.stopPropagation();
   showNavMenus();
+});
+
+document.addEventListener("click", () => {
+  menuUl.classList.remove("show-nav-menus");
 });
 
 let prevSelectedExperienceLi = experienceLi[0];
@@ -79,7 +88,7 @@ experienceLi.forEach((el) => {
 });
 
 function showNavMenus() {
-  menuUl.classList.toggle("nav-menus");
+  menuUl.classList.toggle("show-nav-menus");
 }
 
 function showExperienceDetails(el) {
@@ -89,7 +98,7 @@ function showExperienceDetails(el) {
   );
 
   const titleEl = document.createElement("h2");
-  titleEl.innerHTML = `${experienceDetails.position} @ <span>${experienceDetails.companyShortName}</span>`;
+  titleEl.innerHTML = `${experienceDetails.position}  <span>@ ${experienceDetails.companyShortName}</span>`;
 
   const periodEl = document.createElement("p");
   periodEl.innerText = `${experienceDetails.period.start} - ${experienceDetails.period.end}`;
@@ -102,5 +111,13 @@ function showExperienceDetails(el) {
   });
   descriptionEl.append(...descriptionLis);
 
-  experienceDetailWrapper.replaceChildren(titleEl, periodEl, descriptionEl);
+  const skillsEl = document.createElement("p");
+  skillsEl.innerText = `Skills: ${experienceDetails.skills.join(", ")}`;
+
+  experienceDetailWrapper.replaceChildren(
+    titleEl,
+    periodEl,
+    descriptionEl,
+    skillsEl
+  );
 }
