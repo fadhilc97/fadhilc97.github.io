@@ -8,7 +8,7 @@ const EXPERIENCES = [
       end: "Present",
     },
     descriptions: [
-      "Implement the UI components and pages based on designed by UI/UX Designers",
+      "Implement the UI components and pages based on designed by UI/UX Team",
       "Integrate REST API that already created with Backend Developer",
       "Collaborate with across functional teams: UI/UX Designers, Backend/Fullstack Developers, QAs, and Technical Writers",
     ],
@@ -39,8 +39,8 @@ const EXPERIENCES = [
       end: "December 2019",
     },
     descriptions: [
-      "Provide materials, examination questions and evaluation for Web and Mobile subjec",
-      'As a participant companion to participate the "LKS 2019" (student skill competition) Web and Technology competition Riau Island Province level for school representative',
+      "Provide materials, examination questions and evaluation for Web and Mobile subject",
+      'As a participant companion to participate the "LKS 2019" (student skill competition) Web Technology competition Riau Island Province level for school representative',
     ],
     skills: ["Laravel", "PHP", "Teaching"],
   },
