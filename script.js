@@ -1,7 +1,7 @@
 const EXPERIENCES = [
   {
     id: "incit",
-    position: "Frontend Developer",
+    position: "Fullstack Developer",
     companyShortName: "INCIT",
     period: {
       start: "November 2022",
@@ -11,8 +11,11 @@ const EXPERIENCES = [
       "Implement the UI components and pages based on designed by UI/UX Team",
       "Integrate REST API that already created with Backend Developer",
       "Collaborate with across functional teams: UI/UX Designers, Backend/Fullstack Developers, QAs, and Technical Writers",
+      "Create and integrate the APIs based on the requirements using Nest.js",
+      "Payment and invoicing services integration with Stripe, Google Pay, Apple Pay, and Xero",
+      "File storage services integration with AWS S3 and GCP Storage",
     ],
-    skills: ["React, TypeScript", "Tailwind CSS"],
+    skills: ["React, TypeScript", "Tailwind CSS", "Nest.js", "Prisma.js"],
   },
   {
     id: "tigernix",
